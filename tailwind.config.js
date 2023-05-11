@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'night-dark': '#151515'
+        'bgclr': '#151515',
+        'subclr': '#949495'
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
