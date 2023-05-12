@@ -1,6 +1,6 @@
 <template>
     <div class="mt-10 flex flex-col">
-        <div class="w-[750px] h-[250px] bg-cardbgclr px-8 py-4 mb-6"
+        <div class="w-[700px] bg-cardbgclr p-8 mb-6"
             v-for="(experience, index) in experiences" :key="index">
             <div class="text-[12px] tracking-widest"> {{ experience.from }} &mdash; {{ experience.to }} </div>
             <div class="mt-2 text-xl"> {{ experience.designation }} </div>
@@ -19,11 +19,10 @@
 export default defineComponent({ 
     data() {
         return {
-            experiences: Array<{
+            experiences: [] as {
                 from: string, to: string, designation: string, description: string, 
                 techstack: Array<{imgurl: string, name: string, url: string}>
-            }>
-            
+            }[]
         }
     },
     mounted() {
