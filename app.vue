@@ -3,8 +3,8 @@
 		<div class="content-left w-full lg:w-3/6">
 			<Intro />
 		</div>
-			<div class="content-right w-full lg:w-3/6">
-			<h2> Content Right </h2>
+		<div class="content-right w-full lg:w-3/6">
+			<Experience />	
 		</div>
   	</div>
 </template>

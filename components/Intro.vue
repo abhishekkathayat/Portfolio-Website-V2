@@ -6,11 +6,11 @@
             I build innovation software solutions at 
             <a class="text-white" href="https://infosys.com" target="_blank" rel="noopener noreferrer"> 
                 Infosys</a>. <br/> 
-            In my spare time, I enjoy working on side projects and build stuff. 
+            In my spare time, I enjoy working on side projects and building stuff. 
         </p>
         <div class="text-sm mt-auto">
             <ul class="flex flex-row">
-                <li class="flex flex-row items-center mr-8" v-for="externalLink in externalLinks">
+                <li class="flex flex-row items-center mr-8" v-for="(externalLink, index) in externalLinks" :key="index">
                     <img class="mx-3" :src="externalLink.img" height="20" width="20"/>
                     {{ externalLink.name }}
                     <a :href="externalLink.url"> 
@@ -32,9 +32,9 @@ export default defineComponent({
     },
     mounted() {
         this.externalLinks = [
-            { img: "icons/linkedin.svg", url: "https://linkedin.com/in/abhishek-kathayat", name: "LinkedIn" },
-            { img: "icons/github.svg", url: "https://github.com/Abhishek-Kathayat", name: "GitHub" },
-            { img: "icons/medium.svg", url: "https://medium.com/@abhishekkathayat", name: "Medium" }
+            { img: "platform-icons/linkedin.svg", url: "https://linkedin.com/in/abhishek-kathayat", name: "LinkedIn" },
+            { img: "platform-icons/github.svg", url: "https://github.com/Abhishek-Kathayat", name: "GitHub" },
+            { img: "platform-icons/medium.svg", url: "https://medium.com/@abhishekkathayat", name: "Medium" }
         ]
     }
 })
