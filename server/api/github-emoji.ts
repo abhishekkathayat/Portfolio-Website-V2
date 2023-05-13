@@ -1,7 +1,7 @@
 export default eventHandler(async () => {
     const config = useRuntimeConfig();
     return await $fetch(
-        `${config.public.githubBaseUrl}/users/${config.githubUsername}/repos`, {
+        `${config.public.githubBaseUrl}/emojis`, {
             headers: { Authorization: `Bearer ${config.githubPaToken}` }
         }
     )
