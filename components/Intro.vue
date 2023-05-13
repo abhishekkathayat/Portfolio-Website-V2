@@ -10,7 +10,7 @@
         </p>
         <div class="mt-auto">
             <ul class="text-xs tracking-widest uppercase text-subclr">
-                <li class="my-8 group flex items-center"
+                <li class="my-8 w-fit group flex items-center"
                     v-for="(link, index) in navLinks" :key="index"> 
                     <span class="group-hover:text-white"> 0{{ index + 1 }} </span>
                     <span class="inline-block bg-subclr w-6 h-[1px] mx-2 duration-300 group-hover:w-20 group-hover:bg-white group-hover:duration-300"></span>

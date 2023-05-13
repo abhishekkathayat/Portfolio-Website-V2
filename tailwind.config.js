@@ -13,7 +13,8 @@ module.exports = {
       colors: {
         'bgclr': '#151515',
         'subclr': '#949495',
-        'cardbgclr': '#202022'
+        'cardbgclr': '#202022',
+        'topicsbgclr': '#373737'
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
