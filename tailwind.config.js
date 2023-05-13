@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       colors: {
         'bgclr': '#151515',
-        'subclr': '#949495'
+        'subclr': '#949495',
+        'cardbgclr': '#202022'
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
