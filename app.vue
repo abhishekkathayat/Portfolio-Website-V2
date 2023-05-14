@@ -3,14 +3,13 @@
 		<div class="content-left w-full lg:w-3/6">
 			<Intro />
 		</div>
-		<div class="content-right w-full lg:w-3/6">
-			<Experience />	
+		<div class="content-right w-full lg:w-3/6 overflow-y-auto">
+			<Experience />
+			<Project class="mt-12" />
+			<Articles class="mt-12 mb-12" />
 		</div>
   	</div>
 </template>
 
 <script lang="ts">
 </script>
-
-<style>
-</style>
