@@ -1,6 +1,6 @@
 <template>
-    <div class="w-[720px] grid grid-cols-2">
-        <div class="w-[340px] h-[340px] flex flex-col bg-cardbgclr p-8 mb-6"
+    <div class="w-[720px] flex flex-wrap">
+        <div class="w-[340px] h-[340px] flex flex-col bg-cardbgclr p-8 odd:mr-5 mb-5"
             v-for="repository in repositories" :key="repository.id">
             <div class="text-[11px] tracking-[2px] uppercase"> {{ repository.language }} </div>
             <h1 class="mt-2 font-semibold text-2xl leading-tight"> {{ repository.name }} </h1>

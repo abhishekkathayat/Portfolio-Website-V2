@@ -9,7 +9,7 @@
             In my spare time, I enjoy working on side projects and building stuff. 
         </p>
         <div class="mt-auto">
-            <ul class="text-xs tracking-widest uppercase text-subclr">
+            <ul class="text-[11px] tracking-[2px] font-semibold uppercase text-subclr">
                 <li class="my-8 w-fit"
                     v-for="(link, index) in navLinks" :key="index"> 
                     <a :href="link.reference" v-on:click="updateActiveIndex(index)" class="group flex items-center">
@@ -57,9 +57,9 @@ const props = defineProps({
     }
 })
 
-// watch(() => props.activeSection, (newValue, oldValue) => {
-//     selected.value = navLinks.findIndex(link => link.id === newValue);
-// })
+watch(() => props.activeSection, (newValue, oldValue) => {
+    selected.id = navLinks.findIndex(link => link.id === newValue);
+})
 
 function updateActiveIndex(index: number) {
     selected.id = index;
