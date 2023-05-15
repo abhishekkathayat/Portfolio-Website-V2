@@ -9,12 +9,15 @@
             In my spare time, I enjoy working on side projects and building stuff. 
         </p>
         <div class="mt-auto">
-            <ul class="text-xs tracking-widest uppercase text-subclr">
-                <li class="my-8 w-fit group flex items-center"
+            <ul class="text-[11px] tracking-[2px] font-semibold uppercase text-subclr">
+                <li class="my-8 w-fit"
                     v-for="(link, index) in navLinks" :key="index"> 
-                    <span class="group-hover:text-white"> 0{{ index + 1 }} </span>
-                    <span class="inline-block bg-subclr w-6 h-[1px] mx-2 duration-300 group-hover:w-20 group-hover:bg-white group-hover:duration-300"></span>
-                    <span class="group-hover:text-white"> {{ link.name }} </span>
+                    <a :href="link.reference" v-on:click="updateActiveIndex(index)" class="group flex items-center">
+                        <span :class="{'text-white' : selected.id == index}" class="group-hover:text-white"> 0{{ index + 1 }} </span>
+                        <span :class="[{'w-6' : selected.id != index}, {'w-20 bg-white' : selected.id == index}]" 
+                            class="inline-block bg-subclr h-[1px] mx-2 duration-300 group-hover:w-20 group-hover:bg-white group-hover:duration-300"></span>
+                        <span :class="{'text-white' : selected.id == index}" class="group-hover:text-white"> {{ link.name }} </span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -32,29 +35,34 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+let selected = reactive({ id: 0 });
 
-export default defineComponent({
-    data() {
-        return {
-            isHovered: false,
-            navLinks: [] as { name: string, reference: string }[],
-            externalLinks: [] as { img: string, url: string, name: string }[]
-        }
-    },
-    mounted() {
-        this.navLinks = [
-            { name: "About", reference: "#about" },
-            { name: "Experience", reference: "#experience" },
-            { name: "Projects", reference: "#projects" },
-            { name: "Articles", reference: "#articles" },
-        ]
-        this.externalLinks = [
-            { img: "platform-icons/linkedin.svg", url: "https://linkedin.com/in/abhishek-kathayat", name: "LinkedIn" },
-            { img: "platform-icons/github.svg", url: "https://github.com/Abhishek-Kathayat", name: "GitHub" },
-            { img: "platform-icons/medium.svg", url: "https://medium.com/@abhishekkathayat", name: "Medium" }
-        ]
+const navLinks: Array<any> = [
+    { id: "about",  name: "About", reference: "#about" },
+    { id: "experience", name: "Experience", reference: "#experience" },
+    { id: "project", name: "Projects", reference: "#project" },
+    { id: "article", name: "Articles", reference: "#article" },
+];
+
+const externalLinks: Array<any> = [
+    { img: "platform-icons/linkedin.svg", url: "https://linkedin.com/in/abhishek-kathayat", name: "LinkedIn" },
+    { img: "platform-icons/github.svg", url: "https://github.com/Abhishek-Kathayat", name: "GitHub" },
+    { img: "platform-icons/medium.svg", url: "https://medium.com/@abhishekkathayat", name: "Medium" }
+];
+
+const props = defineProps({
+    activeSection: {
+        type: String
     }
 })
+
+watch(() => props.activeSection, (newValue, oldValue) => {
+    selected.id = navLinks.findIndex(link => link.id === newValue);
+})
+
+function updateActiveIndex(index: number) {
+    selected.id = index;
+}
 
 </script>
