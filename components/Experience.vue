@@ -1,9 +1,9 @@
 <template>
     <div class="mt-10 flex flex-col">
-        <div class="w-[700px] bg-cardbgclr p-8 mb-6"
+        <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] bg-cardbgclr p-8 mb-6"
             v-for="(experience, index) in experiences" :key="index">
             <div class="text-[11px] tracking-[2px]"> {{ experience.from }} &mdash; {{ experience.to }} </div>
-            <div class="mt-2 text-xl font-semibold"> {{ experience.designation }} 
+            <div class="mt-2 lg:text-lg text-xl font-semibold"> {{ experience.designation }} 
                 <span class="font-normal"> {{ experience.organization }} </span> 
             </div>
             <div class="mt-4 text-sm text-subclr"> {{ experience.description }} </div>

@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col flex-grow-1 h-full pl-36 py-20">
-        <h1 class="font-bold text-5xl leading-tight"> Abhishek Kathayat </h1>
-        <h2 class="font-semibold text-[22px]"> Specialist Programmer at Infosys </h2>
+    <div class="flex flex-col flex-grow-1 h-full lg:pl-12 xl:pl-20 2xl:pl-36 py-20">
+        <h1 class="font-bold lg:text-4xl text-5xl leading-tight"> Abhishek Kathayat </h1>
+        <h2 class="font-semibold lg:text-[18px] text-[22px]"> Specialist Programmer at Infosys </h2>
         <p class="mt-10 text-sm text-subclr leading-relaxed"> 
             I build innovation software solutions at 
             <a class="text-white" href="https://infosys.com" target="_blank" rel="noopener noreferrer"> 

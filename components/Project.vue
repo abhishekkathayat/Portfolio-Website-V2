@@ -1,6 +1,8 @@
 <template>
-    <div class="w-[720px] flex flex-wrap">
-        <div class="w-[340px] h-[340px] flex flex-col bg-cardbgclr p-8 odd:mr-5 mb-5"
+    <div class="flex flex-wrap">
+        <div class="lg:w-[225px] lg:h-[480px] xl:w-[285px] xl:h-[420px] 2xl:w-[340px] 2xl:h-[340px] 
+                    lg:odd:mr-2 xl:odd:mr-3 2xl:odd:mr-5 lg:mb-2 xl:mb-3 2xl:mb-5
+                    flex flex-col bg-cardbgclr p-8"
             v-for="repository in repositories" :key="repository.id">
             <div class="text-[11px] tracking-[2px] uppercase"> {{ repository.language }} </div>
             <h1 class="mt-2 font-semibold text-2xl leading-tight"> {{ repository.name }} </h1>
