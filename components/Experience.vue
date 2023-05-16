@@ -30,14 +30,14 @@ const experiences: Array<any> = [
             + "as part of the Network as a Service offering, generating approximately $3.5 million in quarterly " 
             + "revenue for Infosys.",
         techstack: [
-            { imgurl: "dev-icons/java.svg", name: "Java", url:"" },
-            { imgurl: "dev-icons/spring.svg", name: "Spring", url:"" },
-            { imgurl: "dev-icons/apachekafka.svg", name: "Apache Kafka", url:"" },
-            { imgurl: "dev-icons/prometheus.svg", name: "Prometheus", url:"" },
-            { imgurl: "dev-icons/grafana.svg", name: "Grafana", url:"" },
-            { imgurl: "dev-icons/github.svg", name: "GitHub", url:"" },
-            { imgurl: "dev-icons/jira.svg", name: "Jira", url:"" },
-            { imgurl: "dev-icons/confluence.svg", name: "Confleunce", url:"" }
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", name: "Java" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", name: "Spring" },
+            { imgurl: "dev-icons/apachekafka.svg", name: "Apache Kafka"},
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg", name: "Prometheus" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg", name: "Grafana" },
+            { imgurl: "dev-icons/github.svg", name: "GitHub" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg", name: "Jira" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg", name: "Confleunce" }
         ]
     },
     {
@@ -49,12 +49,12 @@ const experiences: Array<any> = [
             + "automating and optimizing the Service Design Process for Cross Region Point-to-Point Ethernet Line Service " 
             + "leading to more efficient and effective service delivery.",
         techstack: [
-            { imgurl: "dev-icons/java.svg", name: "Java", url:"" },
-            { imgurl: "dev-icons/spring.svg", name: "Spring", url:"" },
-            { imgurl: "dev-icons/neo4j.svg", name: "Neo4J", url:"" },
-            { imgurl: "dev-icons/gitlab.svg", name: "GitLab", url:"" },
-            { imgurl: "dev-icons/jira.svg", name: "Jira", url:"" },
-            { imgurl: "dev-icons/confluence.svg", name: "Confleunce", url:"" }
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", name: "Java" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", name: "Spring" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg", name: "Neo4J" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg", name: "GitLab" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg", name: "Jira" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg", name: "Confleunce" }
         ]
     },
     {
@@ -66,13 +66,13 @@ const experiences: Array<any> = [
         + "by extracting and visualizing geospatial data from ArcGIS Shapefiles over an Android device, allowing efficient " 
         + "and seamless access to important geospatial data.",
         techstack: [
-            { imgurl: "dev-icons/java.svg", name: "Java", url:"" },
-            { imgurl: "dev-icons/android.svg", name: "Android", url:"" },
-            { imgurl: "dev-icons/androidstudio.svg", name: "Android Studio", url:"" },
-            { imgurl: "dev-icons/python.svg", name: "Python", url:"" },
-            { imgurl: "dev-icons/django.svg", name: "Django", url:"" },
-            { imgurl: "dev-icons/github.svg", name: "GitHub", url:"" },
-            { imgurl: "dev-icons/nginx.svg", name: "Nginx", url:"" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", name: "Java" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg", name: "Android" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg", name: "Android Studio" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", name: "Python" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg", name: "Django" },
+            { imgurl: "dev-icons/github.svg", name: "GitHub" },
+            { imgurl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg", name: "Nginx" },
         ]
     }
 ];
