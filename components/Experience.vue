@@ -9,9 +9,11 @@
             </div>
             <div class="mt-4 text-sm text-subclr"> {{ experience.description }} </div>
             <div class="text-[11px] mt-4 uppercase font-semibold tracking-widest"> Tech Stack </div>
-            <ul class="mt-4 flex">
-                <li class="mr-5" v-for="technology in experience.techstack"> 
-                    <img :src="technology.imgurl" height="25" width="25" :alt="technology.name"/>
+            <ul class="mt-4 flex flex-wrap">
+                <li class="mr-2 flex items-center whitespace-nowrap text-[11px] bg-topicsbgclr rounded-full font-semibold text-white px-3 py-2 mb-2"
+                    v-for="technology in experience.techstack"> 
+                    <img class="mr-2" :src="technology.imgurl" height="15" width="15" :alt="technology.name"/>
+                    {{ technology.name }}
                 </li>
             </ul>
         </div>
