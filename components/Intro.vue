@@ -1,14 +1,14 @@
 <template>
-    <div class="flex flex-col flex-grow-1 h-full pl-36 py-20">
-        <h1 class="font-bold text-5xl leading-tight"> Abhishek Kathayat </h1>
-        <h2 class="font-semibold text-[22px]"> Specialist Programmer at Infosys </h2>
+    <div class="flex flex-col flex-grow-1 h-full ml-12 lg:pl-12 xl:ml-20 2xl:ml-32 py-20">
+        <h1 class="font-bold text-5xl lg:text-4xl xl:text-5xl 2xl:text-5xl leading-tight"> Abhishek Kathayat </h1>
+        <h2 class="font-semibold text-[22px] lg:text-[18px] xl:text-[22px] 2xl:text-[22px]"> Specialist Programmer at Infosys </h2>
         <p class="mt-10 text-sm text-subclr leading-relaxed"> 
             I build innovation software solutions at 
             <a class="text-white" href="https://infosys.com" target="_blank" rel="noopener noreferrer"> 
                 Infosys</a>. <br/> 
             In my spare time, I enjoy working on side projects and building stuff. 
         </p>
-        <div class="mt-auto">
+        <div class="hidden lg:block mt-auto">
             <ul class="text-[11px] tracking-[2px] font-semibold uppercase text-subclr">
                 <li class="my-8 w-fit"
                     v-for="(link, index) in navLinks" :key="index"> 
@@ -21,7 +21,7 @@
                 </li>
             </ul>
         </div>
-        <div class="text-sm mt-auto">
+        <div class="text-sm mt-16 lg:mt-auto">
             <ul class="flex flex-row">
                 <li class="flex flex-row items-center mr-8" v-for="(externalLink, index) in externalLinks" :key="index">
                     <img class="mr-3" :src="externalLink.img" height="20" width="20"/>

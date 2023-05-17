@@ -3,9 +3,9 @@
 		<div class="content-left w-full lg:w-3/6">
 			<Intro :activeSection="activeSection.id" />
 		</div>
-		<div id="content-right" class="content-right w-full lg:w-3/6 overflow-y-auto scroll-smooth">
+		<div id="content-right" class="content-right w-full lg:w-3/6 lg:overflow-y-auto bg-bgclr scroll-smooth">
 			<div id="experience">
-				<Experience/>
+				<Experience class="mt-12"/>
 			</div>
 			<div id="project" class="mt-12">
 				<Project/>
