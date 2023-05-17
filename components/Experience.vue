@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col mx-10 lg:mx-0">
+    <div class="flex flex-col mx-6 sm:mx-10 lg:mx-0">
         <div class="lg:hidden text-xs uppercase font-semibold tracking-[2px] mb-6"> Experience </div>
-        <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] bg-cardbgclr p-8 mb-6"
+        <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] bg-cardbgclr p-6 sm:p-8 mb-6"
             v-for="(experience, index) in experiences" :key="index">
             <div class="text-[11px] tracking-[2px]"> {{ experience.from }} &mdash; {{ experience.to }} </div>
             <div class="mt-2 text-xl lg:text-lg xl:text-xl 2xl:text-xl font-semibold"> {{ experience.designation }} 
