@@ -18,6 +18,9 @@
 </template>
 
 <script setup lang="ts">
+import { retrieveAndDecodeUserData } from './services/userdata-service';
+
+const userData = ref('');
 let activeSection = reactive({ id: 'about' });
 let scrollableContent: HTMLElement | null = null;
 
@@ -38,6 +41,9 @@ const handleScroll = () => {
 		}
 	}
 };
+
+userData.value = await retrieveAndDecodeUserData()
+	.then(response => JSON.parse(JSON.stringify(response)));
 
 onMounted(() => {
 	scrollableContent = document.getElementById('content-right');
