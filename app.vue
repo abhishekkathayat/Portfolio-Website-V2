@@ -5,7 +5,7 @@
 		</div>
 		<div id="content-right" class="content-right w-full lg:w-3/6 lg:overflow-y-auto bg-bgclr scroll-smooth">
 			<div id="experience">
-				<Experience class="mt-12"/>
+				<Experience class="mt-12" :experience="user.data.experience"/>
 			</div>
 			<div id="project" class="mt-12">
 				<Project/>
@@ -20,7 +20,12 @@
 <script setup lang="ts">
 import { retrieveAndDecodeUserData } from './services/userdata-service';
 
-const userData = ref('');
+const user = reactive({ 
+	data: {
+		intro: {},
+		experience: []
+	} 
+});
 let activeSection = reactive({ id: 'about' });
 let scrollableContent: HTMLElement | null = null;
 
@@ -42,8 +47,8 @@ const handleScroll = () => {
 	}
 };
 
-userData.value = await retrieveAndDecodeUserData()
-	.then(response => JSON.parse(JSON.stringify(response)));
+user.data = await retrieveAndDecodeUserData()
+	.then(response => JSON.parse(response));
 
 onMounted(() => {
 	scrollableContent = document.getElementById('content-right');
