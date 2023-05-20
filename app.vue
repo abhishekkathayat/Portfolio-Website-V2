@@ -1,20 +1,22 @@
 <template>
-    <div class="font-inter text-white h-screen flex flex-col lg:flex-row bg-bgclr">
-		<div class="content-left w-full lg:w-3/6">
-			<Intro :activeSection="activeSection.id" :intro="user.data.intro"/>
+	<div class="flex justify-center h-screen bg-bgclr">
+		<div class="font-inter text-white max-w-[1980px] flex flex-col lg:flex-row">
+			<div class="content-left w-full lg:w-3/6">
+				<Intro :activeSection="activeSection.id" :intro="user.data.intro"/>
+			</div>
+			<div id="content-right" class="content-right w-full lg:w-3/6 lg:overflow-y-auto bg-bgclr scroll-smooth">
+				<div id="experience">
+					<Experience class="mt-12" :experience="user.data.experience"/>
+				</div>
+				<div id="project" class="mt-12">
+					<Project/>
+				</div>
+				<div id="article" class="mt-12 mb-12">
+					<Article/>
+				</div>
+			</div>
 		</div>
-		<div id="content-right" class="content-right w-full lg:w-3/6 lg:overflow-y-auto bg-bgclr scroll-smooth">
-			<div id="experience">
-				<Experience class="mt-12" :experience="user.data.experience"/>
-			</div>
-			<div id="project" class="mt-12">
-				<Project/>
-			</div>
-			<div id="article" class="mt-12 mb-12">
-				<Article/>
-			</div>
-		</div>
-  	</div>
+	</div>
 </template>
 
 <script setup lang="ts">
