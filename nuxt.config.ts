@@ -8,6 +8,8 @@ export default defineNuxtConfig({
         }
     },
     runtimeConfig: {
+        userDataFile: process.env.USERDATA_FILE,
+        userDataRepo: process.env.USERDATA_REPO,
         githubUsername: process.env.GITHUB_USERNAME,
         githubPaToken: process.env.GITHUB_PA_TOKEN,
         mediumUsername: process.env.MEDIUM_USERNAME,
