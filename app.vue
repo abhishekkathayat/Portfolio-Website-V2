@@ -1,7 +1,7 @@
 <template>
     <div class="font-inter text-white h-screen flex flex-col lg:flex-row bg-bgclr">
 		<div class="content-left w-full lg:w-3/6">
-			<Intro :activeSection="activeSection.id" />
+			<Intro :activeSection="activeSection.id" :intro="user.data.intro"/>
 		</div>
 		<div id="content-right" class="content-right w-full lg:w-3/6 lg:overflow-y-auto bg-bgclr scroll-smooth">
 			<div id="experience">
