@@ -17,8 +17,8 @@
                 </ul>
                 <div class="mt-auto flex items-center"> 
                     <img src="platform-icons/github.svg" height="18" width="18" />
-                    <span class="mx-2 text-sm"> GitHub </span>
-                    <a :href="repository.html_url">
+                    <a class="flex items-center" :href="repository.html_url">
+                        <span class="mx-2 text-sm"> GitHub </span>
                         <img src="~/assets/icons/external.svg" height="12" width="12"/>
                     </a>
                 </div>
