@@ -28,7 +28,7 @@
                     <img class="mr-3" :src="platform.img" height="20" width="20"/>
                     <a class="flex items-center" :href="platform.url"> 
                         {{ platform.name }}
-                        <img class="mx-2" src="../assets/icons/external.svg" height="12" width="12"/>
+                        <img class="mx-2" src="~/assets/icons/external.svg" height="12" width="12"/>
                     </a>
                 </li>
             </ul>
