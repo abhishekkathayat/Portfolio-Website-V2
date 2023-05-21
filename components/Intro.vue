@@ -24,10 +24,10 @@
         </div>
         <div class="text-sm mt-16 lg:mt-auto">
             <ul class="flex flex-row">
-                <li class="flex flex-row items-center mr-8" v-for="(platformLink, index) in props.intro?.platforms" :key="index">
-                    <img class="mr-3" :src="platformLink.img" height="20" width="20"/>
-                    {{ platformLink.name }}
-                    <a :href="platformLink.url"> 
+                <li class="flex flex-row items-center mr-8" v-for="(platform, index) in props.platforms" :key="index">
+                    <img class="mr-3" :src="platform.img" height="20" width="20"/>
+                    {{ platform.name }}
+                    <a :href="platform.url"> 
                         <img class="mx-2" src="../assets/icons/external.svg" height="12" width="12"/>
                     </a>
                 </li>
@@ -37,24 +37,21 @@
 </template>
 
 <script setup lang="ts">
+import { Props } from 'nuxt/dist/head/runtime/types';
+
 let selected = reactive({ id: 0 });
 
 const navLinks: Array<any> = [
-    { id: "about",  name: "About", reference: "#about" },
     { id: "experience", name: "Experience", reference: "#experience" },
     { id: "project", name: "Projects", reference: "#project" },
     { id: "article", name: "Articles", reference: "#article" },
 ];
 
-const props = defineProps({
-    activeSection: {
-        type: String
-    },
-    intro: {
-        type: Object
-    }
-})
-console.log(props.intro);
+const props: Props = defineProps({
+    activeSection: String,
+    intro: Object,
+    platforms: Array<any>
+});
 
 watch(() => props.activeSection, (newValue, oldValue) => {
     selected.id = navLinks.findIndex(link => link.id === newValue);

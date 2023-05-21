@@ -22,10 +22,21 @@
                 </div>
             </div>
         </div>
+        <div class="w-fit">
+            <a class="flex items-center group" :href="props.platforms && props.platforms[2].url">
+                <span class="font-semibold tracking-wide text-sm"> View all Articles </span>
+                <img class="ml-2 group-hover:ml-4 duration-300" src="~/assets/icons/right-arrow.svg" height="15" width="15"/>
+            </a>
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import { Props } from 'nuxt/dist/head/runtime/types';
+
+const props: Props = defineProps({
+    platforms: Array<any>
+})
 
 const articles: Array<any> = await useFetch('/api/medium')
     .then(response => response.data.value.items);
