@@ -15,20 +15,32 @@
                 </ul>
                 <div class="mt-auto ml-auto flex items-center"> 
                     <img src="platform-icons/medium.svg" height="18" width="18" />
-                    <span class="mx-2 text-sm"> Medium </span>
-                    <a :href="article.link">
+                    <a class="flex" :href="article.link">
+                        <span class="mx-2 text-sm"> Medium </span>
                         <img src="~/assets/icons/external.svg" height="12" width="12"/>
                     </a>
                 </div>
             </div>
         </div>
+        <div class="w-fit">
+            <a class="flex items-center group" :href="props.platforms && props.platforms[2].url">
+                <span class="font-semibold tracking-wide text-sm"> View all Articles </span>
+                <img class="ml-2 group-hover:ml-4 duration-300" src="~/assets/icons/right-arrow.svg" height="15" width="15"/>
+            </a>
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import { Props } from 'nuxt/dist/head/runtime/types';
+
+const props: Props = defineProps({
+    platforms: Array<any>
+});
 
 const articles: Array<any> = await useFetch('/api/medium')
-    .then(response => response.data.value.items);
+    .then(response => response.data.value.items as Array<any>)
+    .then(data => data.slice(0,6));
 
 function formatPublishDate(date: string): string {
     return date.split(" ")[0].split("-").reverse().join("-");
