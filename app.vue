@@ -15,7 +15,7 @@
 					<Article :platforms="user.data.platforms"/>
 				</div>
 				<div id="footer" class="mb-20">
-					<Footer/>
+					<Footer :content="user.data.footer"/>
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,8 @@ const user = reactive({
 	data: {
 		intro: {},
 		experience: [],
-		platforms: []
+		platforms: [],
+		footer: []
 	} 
 });
 let activeSection = reactive({ id: 'about' });
