@@ -39,13 +39,13 @@ import { processDescriptionEmojis } from '~/services/github-service';
 
 const props: Props = defineProps({
     platforms: Array<any>
-})
+});
 
-const repositories: any = await useFetch('/api/github')
-    .then(response => response.data)
-    .catch(error => error.data);
+const repositories: Array<any> = await useFetch('/api/github')
+    .then(response => response.data.value as Array<any>)
+    .then(data => data.slice(0,6));
 
-for(const repository of repositories.value) {
+for(const repository of repositories) {
     repository.name = repository.name.replace(/-/g, ' ');
     repository.description = await processDescriptionEmojis(repository.description);
 }

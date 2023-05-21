@@ -36,10 +36,11 @@ import { Props } from 'nuxt/dist/head/runtime/types';
 
 const props: Props = defineProps({
     platforms: Array<any>
-})
+});
 
 const articles: Array<any> = await useFetch('/api/medium')
-    .then(response => response.data.value.items);
+    .then(response => response.data.value.items as Array<any>)
+    .then(data => data.slice(0,6));
 
 function formatPublishDate(date: string): string {
     return date.split(" ")[0].split("-").reverse().join("-");
