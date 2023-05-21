@@ -14,7 +14,7 @@
                     </li>
                 </ul>
                 <div class="mt-auto ml-auto flex items-center"> 
-                    <img src="platform-icons/medium.svg" height="18" width="18" />
+                    <img src="~/assets/icons/medium.svg" height="18" width="18" />
                     <a class="flex" :href="article.link">
                         <span class="mx-2 text-sm"> Medium </span>
                         <img src="~/assets/icons/external.svg" height="12" width="12"/>
