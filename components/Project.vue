@@ -17,7 +17,7 @@
                 </ul>
                 <div class="mt-auto flex items-center"> 
                     <img src="~/assets/icons/github.svg" height="18" width="18" />
-                    <a class="flex items-center" :href="repository.html_url">
+                    <a class="flex items-center" :href="repository.html_url" target="_blank" rel="noopener noreferrer">
                         <span class="mx-2 text-sm"> GitHub </span>
                         <img src="~/assets/icons/external.svg" height="12" width="12"/>
                     </a>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="w-fit mt-2">
-            <a class="flex items-center group" :href="props.platforms && props.platforms[1].url">
+            <a class="flex items-center group" :href="props.platforms && props.platforms[1].url" target="_blank" rel="noopener noreferrer">
                 <span class="font-semibold tracking-wide text-sm"> View all Projects </span>
                 <img class="ml-2 group-hover:ml-4 duration-300" src="~/assets/icons/right-arrow.svg" height="15" width="15"/>
             </a>

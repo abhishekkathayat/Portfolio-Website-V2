@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="w-fit">
-            <a class="flex items-center group" :href="props.platforms && props.platforms[0].url">
+            <a class="flex items-center group" :href="props.platforms && props.platforms[0].url" target="_blank" rel="noopener noreferrer">
                 <span class="font-semibold tracking-wide text-sm"> View LinkedIn Profile </span>
                 <img class="ml-2 group-hover:ml-4 duration-300" src="~/assets/icons/right-arrow.svg" height="15" width="15"/>
             </a>
