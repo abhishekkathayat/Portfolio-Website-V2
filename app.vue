@@ -1,10 +1,10 @@
 <template>
 	<div class="flex justify-center h-screen bg-bgclr">
-		<div class="font-inter text-white max-w-[1980px] flex flex-col lg:flex-row">
+		<div class="font-inter text-white max-w-[1980px] w-full flex flex-col lg:flex-row">
 			<div class="content-left w-full lg:w-3/6">
 				<Intro :activeSection="activeSection.id" :intro="user.data.intro" :platforms="user.data.platforms"/>
 			</div>
-			<div id="content-right" class="content-right w-full lg:w-3/6 lg:overflow-y-auto bg-bgclr scroll-smooth">
+			<div id="content-right" class="content-right w-full lg:w-3/6 lg:pl-4 lg:overflow-y-auto bg-bgclr scroll-smooth">
 				<div id="experience">
 					<Experience class="mt-16" :experience="user.data.experience" :platforms="user.data.platforms"/>
 				</div>

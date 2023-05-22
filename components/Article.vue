@@ -1,24 +1,27 @@
 <template>
     <div class="flex flex-col mx-6 sm:mx-10 lg:mx-0">
         <div class="lg:hidden text-xs uppercase font-semibold tracking-[2px] mb-6"> Articles </div>
-        <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] flex flex-col p-6 sm:p-8 mb-6 relative bg-center backdrop-blur-0"
-            v-for="(article, index) of articles" :key="index" :style="{ 'background-image': `url(${article.thumbnail})` }">
-            <div class="absolute inset-0 bg-gradient-to-r from-bgclr/100 to-bgclr/90"></div>
-            <div class="flex flex-col z-10">
-                <div class="text-[11px] tracking-[2px] uppercase"> {{ formatPublishDate(article.pubDate) }} </div>
-                <h1 class="mt-2 font-semibold text-lg leading-tight"> {{ article.title }} </h1>
-                <ul class="mt-4 flex whitespace-nowrap flex-wrap">
-                    <li class="text-[10px] bg-topicsbgclr rounded-full font-semibold text-white px-2 py-1 mr-2 mb-2"
-                        v-for="category in article.categories">
-                        {{ category }}
-                    </li>
-                </ul>
-                <div class="mt-2 2xl:mt-1 ml-auto flex items-center"> 
-                    <img src="~/assets/icons/medium.svg" height="18" width="18" />
-                    <a class="flex" :href="article.link" target="_blank" rel="noopener noreferrer">
-                        <span class="mx-2 text-sm"> Medium </span>
-                        <img src="~/assets/icons/external.svg" height="12" width="12"/>
-                    </a>
+        <div class="flex flex-col lg:w-fit group">
+            <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] flex flex-col p-6 sm:p-8 mb-6 relative bg-center
+                    lg:hover:scale-105 lg:duration-200 lg:group-hover:opacity-50 lg:hover:!opacity-100"
+                v-for="(article, index) of articles" :key="index" :style="{ 'background-image': `url(${article.thumbnail})` }">
+                <div class="absolute inset-0 bg-gradient-to-r from-bgclr/100 to-bgclr/90"></div>
+                <div class="flex flex-col z-10">
+                    <div class="text-[11px] tracking-[2px] uppercase"> {{ formatPublishDate(article.pubDate) }} </div>
+                    <h1 class="mt-2 font-semibold text-lg leading-tight"> {{ article.title }} </h1>
+                    <ul class="mt-4 flex whitespace-nowrap flex-wrap">
+                        <li class="text-[10px] bg-topicsbgclr rounded-full font-semibold text-white px-2 py-1 mr-2 mb-2"
+                            v-for="category in article.categories">
+                            {{ category }}
+                        </li>
+                    </ul>
+                    <div class="mt-2 2xl:mt-1 ml-auto flex items-center"> 
+                        <img src="~/assets/icons/medium.svg" height="18" width="18" />
+                        <a class="flex" :href="article.link" target="_blank" rel="noopener noreferrer">
+                            <span class="mx-2 text-sm"> Medium </span>
+                            <img src="~/assets/icons/external.svg" height="12" width="12"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
