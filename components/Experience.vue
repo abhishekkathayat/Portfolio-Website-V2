@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col mx-6 sm:mx-10 lg:mx-0">
         <div class="lg:hidden text-xs uppercase font-semibold tracking-[2px] mb-6"> Experience </div>
-        <div class="flex flex-col w-fit group">
-            <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] bg-cardbgclr p-6 sm:p-8 mb-6 
+        <div class="flex flex-col lg:w-fit group">
+            <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] bg-cardbgclr p-6 sm:p-8 mb-4
                     lg:hover:scale-105 lg:duration-200 lg:group-hover:opacity-50 lg:hover:!opacity-100"
                 v-for="(experience, index) in props.experience" :key="index">
                 <div class="text-[11px] tracking-[2px]"> {{ experience.from }} &mdash; {{ experience.to }} </div>
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-        <div class="w-fit">
+        <div class="w-fit mt-2">
             <a class="flex items-center group" :href="props.platforms && props.platforms[0].url" target="_blank" rel="noopener noreferrer">
                 <span class="font-semibold tracking-wide text-sm"> View LinkedIn Profile </span>
                 <img class="ml-2 group-hover:ml-4 duration-300" src="~/assets/icons/right-arrow.svg" height="20" width="20"/>
