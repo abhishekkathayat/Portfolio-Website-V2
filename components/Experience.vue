@@ -3,7 +3,7 @@
         <div class="lg:hidden text-xs uppercase font-semibold tracking-[2px] mb-6"> Experience </div>
         <div class="flex flex-col lg:w-fit group">
             <div class="lg:w-[460px] xl:w-[580px] 2xl:w-[700px] bg-cardbgclr p-6 sm:p-8 mb-4
-                    lg:hover:scale-105 lg:duration-200 lg:group-hover:opacity-50 lg:hover:!opacity-100"
+                    lg:hover:scale-105 lg:duration-300 lg:group-hover:opacity-50 lg:hover:!opacity-100"
                 v-for="(experience, index) in props.experience" :key="index">
                 <div class="text-[11px] tracking-[2px]"> {{ experience.from }} &mdash; {{ experience.to }} </div>
                 <div class="mt-2 text-xl lg:text-lg xl:text-xl 2xl:text-xl font-semibold"> {{ experience.designation }} 
@@ -36,5 +36,4 @@ const props: Props = defineProps({
     experience: Array<any>,
     platforms: Array<any>
 });
-
 </script>

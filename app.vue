@@ -64,5 +64,4 @@ onMounted(() => {
 onUnmounted(() => { 
 	scrollableContent?.removeEventListener('scroll', handleScroll); 
 });
-
 </script>

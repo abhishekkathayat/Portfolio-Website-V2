@@ -28,5 +28,4 @@ import { Props } from 'nuxt/dist/head/runtime/types';
 const props: Props = defineProps({
     content: Array<any>
 })
-
 </script>

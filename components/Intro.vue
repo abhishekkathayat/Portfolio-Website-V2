@@ -60,5 +60,4 @@ watch(() => props.activeSection, (newValue, oldValue) => {
 function updateActiveIndex(index: number) {
     selected.id = index;
 }
-
 </script>
