@@ -26,7 +26,7 @@
             <ul class="flex flex-row">
                 <li class="flex flex-row items-center mr-8" v-for="(platform, index) in props.platforms.slice(3,4)" :key="index">
                     <img class="mr-3" :src="platform.img" height="20" width="20"/>
-                    <a class="flex items-center" :href="platform.url"> 
+                    <a class="flex items-center" :href="platform.url" target="_blank" rel="noopener noreferrer"> 
                         {{ platform.name }}
                         <img class="mx-2" src="~/assets/icons/external.svg" height="12" width="12"/>
                     </a>
@@ -60,5 +60,4 @@ watch(() => props.activeSection, (newValue, oldValue) => {
 function updateActiveIndex(index: number) {
     selected.id = index;
 }
-
 </script>
