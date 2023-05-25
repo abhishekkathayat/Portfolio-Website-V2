@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+  <img src="https://github.com/Abhishek-Kathayat/Portfolio-Website-V2/blob/master/public/Logo.png" height="150"/>
+  <h1> Portfolio Website </h1>
+  
+  [![Built using Nuxt](https://img.shields.io/badge/Built_using-Nuxt-01DC83?logo=nuxt.js&logoColor=01DC83&style=for-the-badge)](https://nuxtjs.org/)
+  [![Built using Tailwind CSS](https://img.shields.io/badge/Built_using-Tailwind_CSS-38BDF8?logo=tailwind-css&logoColor=38BDF8&style=for-the-badge)](https://tailwindcss.com/)
+  [![Deployed using Vercel](https://img.shields.io/badge/Deployed_using-Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge)](https://vercel.com/)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+  ![Website Status](https://img.shields.io/website?down_color=red&down_message=down&up_color=brightgreen&up_message=up&url=https%3A%2F%2Fportfolio-website-v2-alpha.vercel.app%2F&style=for-the-badge)
+  
+  <sub> Built with ❤️ by Abhishek Kathayat </sub>
+  
+  <img src="https://github.com/Abhishek-Kathayat/Portfolio-Website-V2/blob/master/public/Portfolio-Website-Webpage.PNG"/> <br/>
+   
+  <b> Checkout the Website: </b>
+  
+  [![Website](https://img.shields.io/badge/Website-151515?style=for-the-badge)](https://portfolio-website-v2-alpha.vercel.app/)
+  
+</div>
