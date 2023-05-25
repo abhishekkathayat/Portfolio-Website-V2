@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://github.com/Abhishek-Kathayat/Portfolio-Website-V2/blob/master/public/Logo.png" height="150"/>
-  <h1> Portfolio Website </h1>
+  <img src="https://github.com/Abhishek-Kathayat/Portfolio-Website-V2/blob/master/public/Logo.png" height="100"/>
+  <h2> Portfolio Website </h2>
   
   [![Built using Nuxt](https://img.shields.io/badge/Built_using-Nuxt-01DC83?logo=nuxt.js&logoColor=01DC83&style=for-the-badge)](https://nuxtjs.org/)
   [![Built using Tailwind CSS](https://img.shields.io/badge/Built_using-Tailwind_CSS-38BDF8?logo=tailwind-css&logoColor=38BDF8&style=for-the-badge)](https://tailwindcss.com/)
