@@ -6,7 +6,7 @@
 			</div>
 			<div id="content-right" class="content-right w-full lg:w-3/6 lg:pl-4 lg:overflow-y-auto bg-bgclr scroll-smooth">
 				<div id="experience">
-					<Experience class="mt-16" :experience="user.data.experience" :platforms="user.data.platforms"/>
+					<Experience class="mt-10 lg:mt-20" :experience="user.data.experience" :platforms="user.data.platforms"/>
 				</div>
 				<div id="project" class="mt-32">
 					<Project :platforms="user.data.platforms"/>

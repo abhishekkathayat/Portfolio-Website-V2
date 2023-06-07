@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col flex-grow-1 h-full ml-6 sm:ml-12 lg:ml-12 xl:ml-20 2xl:ml-32 py-20">
-        <h1 class="font-bold text-4xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-5xl leading-tight"> {{ props.intro?.name }} </h1>
-        <h2 class="font-semibold text-[18px] sm:text-[22px] lg:text-[18px] xl:text-[22px] 2xl:text-[22px]"> {{ props.intro?.currentwork }} </h2>
+    <div class="flex flex-col flex-grow-1 h-full ml-6 sm:ml-12 lg:ml-12 xl:ml-20 2xl:ml-32 pt-20 lg:pt-24 pb-20">
+        <h1 class="font-bold text-4xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-[55px] leading-tight"> {{ props.intro?.name }} </h1>
+        <h2 class="font-semibold text-[18px] sm:text-[22px] lg:text-[18px] xl:text-[22px] 2xl:text-[24px] mt-1"> {{ props.intro?.currentwork }} </h2>
         <p class="mt-10 text-sm text-subclr leading-relaxed"> 
             {{ props.intro?.briefdescription.desca }}
             <a class="text-white" :href="props.intro?.briefdescription.descb.url" target="_blank" rel="noopener noreferrer"> 
@@ -15,8 +15,8 @@
                     v-for="(link, index) in navLinks" :key="index"> 
                     <a :href="link.reference" v-on:click="updateActiveIndex(index)" class="group flex items-center">
                         <span :class="{'text-white' : selected.id == index}" class="group-hover:text-white"> 0{{ index + 1 }} </span>
-                        <span :class="[{'w-6' : selected.id != index}, {'w-20 bg-white' : selected.id == index}]" 
-                            class="inline-block bg-subclr h-[1px] mx-2 duration-300 group-hover:w-20 group-hover:bg-white group-hover:duration-300"></span>
+                        <span :class="[{'w-6' : selected.id != index}, {'w-16 bg-white' : selected.id == index}]" 
+                            class="inline-block bg-subclr h-[1px] mx-4 duration-300 group-hover:w-16 group-hover:bg-white group-hover:duration-300"></span>
                         <span :class="{'text-white' : selected.id == index}" class="group-hover:text-white"> {{ link.name }} </span>
                     </a>
                 </li>
