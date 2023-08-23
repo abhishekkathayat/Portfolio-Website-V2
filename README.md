@@ -14,6 +14,6 @@
    
   <b> Checkout the Website: </b>
   
-  [![Website](https://img.shields.io/badge/Website-151515?style=for-the-badge)](https://portfolio-website-v2-alpha.vercel.app/)
+  [![Website](https://img.shields.io/badge/Website-151515?style=for-the-badge)](https://abhishek-kathayat.vercel.app/)
   
 </div>
