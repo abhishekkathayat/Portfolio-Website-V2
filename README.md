@@ -6,7 +6,7 @@
   [![Built using Tailwind CSS](https://img.shields.io/badge/Built_using-Tailwind_CSS-38BDF8?logo=tailwind-css&logoColor=38BDF8&style=for-the-badge)](https://tailwindcss.com/)
   [![Deployed using Vercel](https://img.shields.io/badge/Deployed_using-Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge)](https://vercel.com/)
 
-  ![Website Status](https://img.shields.io/website?down_color=red&down_message=down&up_color=brightgreen&up_message=up&url=https%3A%2F%2Fportfolio-website-v2-alpha.vercel.app%2F&style=for-the-badge)
+  ![Website Status](https://img.shields.io/website?down_color=red&down_message=down&up_color=brightgreen&up_message=up&url=https%3A%2F%2Fabhishek-kathayat.vercel.app%2F&style=for-the-badge)
   
   <sub> Built with ❤️ by Abhishek Kathayat </sub>
   
