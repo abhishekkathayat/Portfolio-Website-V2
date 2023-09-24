@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            title: 'Abhishek Kathayat'
+            title: 'Abhishek Kathayat',
+            script: [
+                {
+                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+                    'data-ad-client': process.env.GOOGLE_ADSENSE_ID,
+                    async: true                  
+                }
+            ]
         }
     },
     css: ['~/assets/css/main.css'],
