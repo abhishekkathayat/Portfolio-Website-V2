@@ -1,0 +1,25 @@
+@import url('https://rsms.me/inter/inter.css');
+@import 'tailwindcss';
+
+@source "./components/**/*.{vue,js,ts}";
+@source "./layouts/**/*.vue";
+@source "./pages/**/*.vue";
+@source "./plugins/**/*.{js,ts}";
+@source "./nuxt.config.{js,ts}";
+@source "./app.vue";
+
+@theme {
+  --color-bgclr: #151515;
+  --color-subclr: #949495;
+  --color-cardbgclr: #202022;
+  --color-topicsbgclr: #373737;
+  
+  --font-family-inter: "Inter", sans-serif;
+}
+
+@layer base {
+    html {
+        font-family: 'Inter';
+        font-feature-settings: "salt";
+    }
+}
